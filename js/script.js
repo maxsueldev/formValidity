@@ -65,13 +65,21 @@ const mensagens = {
 
 function validaCampo(campo) {
     let mensagem = "";
-
-    if(campo.name == 'cpf' && campo.length >= 11) {
-        eUmCpf(campo);
+    
+    if(campo.name === 'cpf') {
+        if(!eUmCpf(campo)) {
+            campo.setCustomValidity('Cpf inválido');
+        } else {
+            campo.setCustomValidity('');
+        }
     }
 
-    if(campo.name == 'aniversario' && campo.value != "") {
-        eMaiorDeIdade(campo);
+    if(campo.name == 'aniversario') {
+        if(!eMaiorDeIdade(campo)) {
+            campo.setCustomValidity('Usuário menor de idade');
+        } else {
+            campo.setCustomValidity('');
+        }
     }
 
     tiposDeErro.forEach(erro => {
