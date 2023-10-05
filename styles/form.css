@@ -41,6 +41,8 @@
 }
 
 .mensagem-erro {
+    font-size: 14px;
+    color: red;
     margin-bottom: 20px;
 }
 

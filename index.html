@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validity</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset class="campo-formulario">
                 <label class="campo-etiqueta" for="cpf">CPF</label>
-                <input class="campo-escrita campo-menor" name="cpf" id="cpf" type="text" required>
+                <input class="campo-escrita campo-menor" name="cpf" id="cpf" type="text" minlength="11" maxlength="14" required>
                 <span class="mensagem-erro"></span>
             </fieldset>
             <fieldset class="campo-formulario">
