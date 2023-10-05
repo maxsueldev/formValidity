@@ -10,15 +10,12 @@ Validando dados de um formulário de criação de conta, com Validity State
 
 ![Print screen mobile portfolio2.0](img/print/mobile/print1.png)
 ![Print screen mobile portfolio2.0](img/print/mobile/print2.png)
-![Print screen mobile portfolio2.0](img/print/mobile/print3.png)
-![Print screen mobile portfolio2.0](img/print/mobile/print4.png)
 
 <br>
 
 ### Layout Telas Maiores
 
 ![Print screen mobile portfolio2.0](img/print/telaMaior/print1.png)
-![Print screen mobile portfolio2.0](img/print/telaMaior/print2.png)
 
 <br>
 
