@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validity</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <ul class="header-list">
+            <li>
+                <a href="#">Sobre</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <input class="search" type="search" placeholder="Busque aqui">
+            </li>
+            <li>
+                <a class="button-criar-conta" href="#">Criar conta</a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+        <p>Validação de formulário com Validity State</p>
+    </section>
+    <section class="form-section">
+        <p>Preencha os campos abaixo para criar sua conta!</p>
+
+        <form class="formulario" data-formulario>
+            <fieldset class="campo-formulario">
+                <label class="campo-etiqueta" for="nome">Nome</label>
+                <input class="campo-escrita" name="nome" id="nome" type="text" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="campo-formulario">
+                <label class="campo-etiqueta" for="email">Email</label>
+                <input class="campo-escrita" name="email" id="email" type="email" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="campo-formulario">
+                <label class="campo-etiqueta" for="rg">RG</label>
+                <input class="campo-escrita campo-menor" name="rg" id="rg" type="text" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="campo-formulario">
+                <label class="campo-etiqueta" for="cpf">CPF</label>
+                <input class="campo-escrita campo-menor" name="cpf" id="cpf" type="text" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="campo-formulario">
+                <label class="campo-etiqueta" for="aniversario">Data de nascimento</label>
+                <input class="campo-escrita" name="aniversario" id="aniversario" type="date" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="formulario-termos">
+                <input name="termos" class="termos-input" type="checkbox" required>
+                <p class="termos-texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme descrito na Política de Privacidade.</p>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div>
+                <input value="Avançar" class="formulario-botao" id="enviar" type="submit" data-botao-enviar>
+                <span class="mensagem-erro"></span>
+           </div>
+        </form>
+    </section>
+</body>
+</html>

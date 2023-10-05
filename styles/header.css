@@ -1,0 +1,45 @@
+.header {
+    padding: 1rem;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.header-list li {
+    list-style: none;
+}
+
+.header-list li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.search {
+    display: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--black);
+    padding: .3rem 1.7rem;
+    width: 20vw;
+}
+
+.button-criar-conta {
+    color: var(--white) !important;
+    font-weight: 600;
+    border-radius: 2rem;
+    background-color: var(--blue);
+    border: var(--blue) 2px solid;
+    padding: .5em 1em;
+}
+
+@media(min-width: 834px) {
+    .header {
+        padding: 2rem 6rem;
+    }
+    .search {
+        display: block;
+    }
+}
